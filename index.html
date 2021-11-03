@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>chatpractice</title>
+</head>
+<body>
+    <section class="chat_section">
+        <div class="brand">
+            <img src="/chaticon.png" alt="">
+            <h1>My Chat</h1>
+        </div>
+        <div class="message_section">
+        </div>
+        <div class="textArea">
+            <textarea  id="textarea" cols="30" rows="1" placeholder="write a message..."></textarea>
+            <button id="sendBtn">Send</button>
+        </div>
+
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/client.js"></script>
+</body>
+</html>

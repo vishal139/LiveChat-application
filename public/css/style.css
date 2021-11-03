@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #c8d6e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand{
+    /* background: linear-gradient(#30336b,#4834d4); */
+    background-color: #576574;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-color: #4834d4;
+}
+.brand img{
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    margin: 15px;
+}
+.brand h1{
+    text-transform: capitalize;
+    color: white;
+    font-weight: 600;
+}
+
+.chat_section{
+    width: 700px;
+    max-width: 90%;
+    background-color: #54a0ff;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5) ,0 -10px 10px -3px rgba(0,0,0,0.5);
+    
+}
+.message_section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 30px;
+    color: white;
+    height: 500px;
+    overflow-y: auto;
+}
+.message{
+    margin-bottom: 25px;
+    max-width: 50%;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+}
+.message h6{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #000;
+    font-size: 15px;
+}
+.incoming{
+    background-color: #4834d4;
+    padding: 10px;
+    
+}
+.outgoing{
+    background-color: #686de0;
+    padding: 10px;
+    margin-left: auto;
+}
+
+#textarea{
+    padding: 20px;
+    width: 80%;
+}
+
+span button{
+    width: 20%;
+    padding: 5px;
+}
+.textArea{
+    display: flex;
+    margin-top: 10px;
+}
+.textArea button{
+    width: 20%;
+    cursor: pointer;
+}
+.textArea button:hover{
+    background-color: #badc58;
+    border-color: #4834d4;
+}
+
+@media (max-width:768px) {
+    .message_section{
+        height: 75vh;
+        
+    }
+    
+}
